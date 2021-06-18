@@ -1,4 +1,66 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+}
+.navbar .logo{
+    position: absolute;
+    width: 115px;
+    top:5px;
+    left: 5px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color:#FFFEFE;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar .navbar-collapse{
+    
+    justify-content: center;
+    padding: 20px;
+}
+.navbar .navbar-collapse .nav-link{
+    padding: 8px 30px;
+}
+.btn{
+    border: solid 1px #000000;
+    border-radius: unset;
+    padding: 5px 30px;
+    color:#FFFEFE;
+    font-family: 'Montserrat', sans-serif;  
+    background-color: #06054E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container-fluid{
+    padding:0;
+    background-image: url("images/image\ 120.jpg");
+    background-repeat: no-repeat;
+    height: 100vw;
+    
+}
+
+.container-fluid  .presentation-container{
+    padding: 3vw;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    
+}
+.presentation-text-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.presentation-title{
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFEFE;
+    padding:5px;
+}
+.presentation-subtitle{
+    font-family: 'Ruge Boogie', cursive;
+    color: #FFFEFE;
+    padding:5px;
 }
