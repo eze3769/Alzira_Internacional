@@ -2,12 +2,24 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 .navbar .logo{
     position: absolute;
     width: 115px;
     top:5px;
     left: 5px;
+}
+.navbar .language-logo{
+    position:absolute;
+    width: 40px;
+    top:30px;
+    right: 0px;
+
+}
+.navbar .language-logo:hover{
+    cursor:pointer;
+
 }
 /* d */
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
@@ -17,25 +29,28 @@
 .navbar .navbar-collapse{
     
     justify-content: center;
-    padding: 20px;
+    padding: 10px 20px;
 }
 .navbar .navbar-collapse .nav-link{
     padding: 8px 30px;
 }
 .btn{
-    border: solid 1px #000000;
+    
     border-radius: unset;
-    padding: 5px 30px;
+    padding: 12px 30px;
     color:#FFFEFE;
     font-family: 'Montserrat', sans-serif;  
-    background-color: #06054E;
+    font-weight: 600;
+    font-size: 18px;
+    background-color:  #7F1C3B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 70px;
 }
-.container-fluid{
+.background-container {
     padding:0;
-    background-image: url("images/image\ 120.jpg");
+    background-image: url("images/background.jpg");
     background-repeat: no-repeat;
-    height: 100vw;
+   
     
 }
 
@@ -55,16 +70,101 @@
     align-items: center;
 }
 .presentation-title{
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFEFE;
-    padding:5px;
-}
+    color: #fffefe00;
+    font-size: 0;
+    padding:50px 300px;
+    background-image: url("/images/h1-main.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+  }
 .presentation-subtitle{
-    font-family: 'Ruge Boogie', cursive;
+    font-weight: 700;
+    font-size: 20px;
     color: #FFFEFE;
-    padding:5px;
+    padding-top:65px;
+    padding-bottom: 30px;
+    margin:20px;
 }
+.full-sized{
+    height: 100vh;
+    margin:20px 0;
+}
+#aboutUs{
+    padding: 40px 20px;
 
+}
+#aboutUs .aboutUs-textContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:20px;
+}
+#aboutUs .aboutUs-textContainer .aboutUs-sectionText{
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+#aboutUs .aboutUs-textContainer .aboutUs-enhanceText{
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: 400;
+    line-height: 25px;
+    padding: 0 9vw;
+    text-align: center;
+}
+#aboutUs .aboutUs-textContainer .aboutUs-enhanceSuscribe{
+    font-weight: 700;
+    text-decoration: underline;
+    text-align: center;
+    padding:30px;
+    font-size: 18px;
+}
+#aboutUs .aboutUs-textContainer .aboutUs-enhanceSuscribe:hover{
+    cursor:pointer;
+}
+#aboutUs .aboutUs-textContainer .sectionEnhance-img{
+    margin-top: 80px;
+}
+#aboutUs .aboutUs-img{
+    width: 38vw;
+}
+.section-title{
+    font-weight: 600;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 1);
+    padding:10px;
+    line-height: 40px;
+}
+#aboutUs .calendarBox{
+    padding:10px;
+    margin:35px;
+    margin-bottom: 80px;
+    border:2px solid black;
+    width:550px;
+    height: 111px;
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+#aboutUs .calendarBox .calendarBox-TextContainer{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-top:15px;
+}
+#aboutUs .calendarBox .calendarBox-TextContainer .calendarBox-text{
+    color:rgba(0, 0, 0, 1);
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 15px;
+    
+}
+#aboutUs .calendarBox .calendarBox-img{
+    padding: 10px;
+    width: 80px;
+
+}
 
 .panal {
     /* hexagonos */
