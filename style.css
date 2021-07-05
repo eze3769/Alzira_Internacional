@@ -95,6 +95,7 @@ html {
 /* Sección acerca de nosotros*/
 #aboutUs{
     padding: 40px 20px;
+    background: #FFFEFE;
 
 }
 #aboutUs .aboutUs-textContainer{
@@ -241,18 +242,68 @@ p {
 }
 
 
-/*Sección ¿Estás Listo? */
+/*Sección oportunidad */
+
+#opportunities .opportunities-backgroundContainer{
+    background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
+    clip-path: polygon(0% 0%, 40% 0%, 15% 100%, 0% 100%);
+    display: flex;
+    position:absolute;
+    width: 100%;
+    height: 160vh;
+}
 
 #opportunities .opportunities-container{
-    background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
-    clip-path: polygon(0% 0%, 45% 0%, 20% 100%, 0% 100%);
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 160vh;
+    background: #FFFEFE;
+    
+}
+#opportunities .opportunities-container .opportunities-img{
+    width: 28vw;
+    z-index: 2;
+
+}
+#opportunities .opportunities-container .opportunities-TextContainer{
     display: flex;
-    
+    flex-direction: column;
+    width: 45vw;
 }
-.opportunities-TextContainer{
-    
+#opportunities .opportunities-container .opportunities-TextContainer .opportunities-TextContainerTitle{
+    font-weight: 600;
+    font-size:2.5em;
+    text-align: center;
+    padding: 40px 0;
 }
-=======
+#opportunities .opportunities-container .opportunities-TextContainer .opportunities-text{
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+#opportunities .opportunities-container .opportunities-TextContainer .opportunities-highlightedText{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 9);
+}
+#opportunities .opportunities-container .opportunities-TextContainer .opportunities-btn{
+    font-weight: 600;
+    display: inline-block;
+    padding: 18px 20px;
+    border: 4px solid #351946;
+    background: #FFFEFE;
+    color:rgba(50, 27, 73, 1);
+    font-size: 1.5em;
+    text-align: center;
+    margin:120px;
+}
+
+
+
+
 .contenedor-btn {
     display: flex;
     justify-content: center !important;
