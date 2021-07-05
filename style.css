@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 .navbar .logo{
     position: absolute;
     width: 115px;
@@ -89,6 +92,7 @@
     height: 100vh;
     margin:20px 0;
 }
+/* Sección acerca de nosotros*/
 #aboutUs{
     padding: 40px 20px;
 
@@ -166,6 +170,8 @@
 
 }
 
+/*Sección servicios*/
+
 .panal {
     /* hexagonos */
     --radio: calc(100vmin / 3);
@@ -234,6 +240,19 @@ p {
     background: linear-gradient(90deg, rgba(6, 5, 61, 0.87) 61.28%, #85001F 103.12%);
 }
 
+
+/*Sección ¿Estás Listo? */
+
+#opportunities .opportunities-container{
+    background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
+    clip-path: polygon(0% 0%, 45% 0%, 20% 100%, 0% 100%);
+    display: flex;
+    
+}
+.opportunities-TextContainer{
+    
+}
+=======
 .contenedor-btn {
     display: flex;
     justify-content: center !important;
@@ -320,3 +339,4 @@ footer {
     color: white;
     font-family: Montserrat;
 }
+
