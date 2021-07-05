@@ -191,11 +191,15 @@ html {
 }
 
 /* grid panal */
+#services{
+    margin-bottom:40px;
+}
 .panal-cont {
     font-family: 'Montserrat', sans-serif;
     max-width: 100vmin;
     padding-left: 2vmin;
     margin: .5rem auto;
+  
   }
 
   article {
@@ -250,14 +254,14 @@ p {
     display: flex;
     position:absolute;
     width: 100%;
-    height: 160vh;
+    height: 180vh;
 }
 
 #opportunities .opportunities-container{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 160vh;
+    height: 180vh;
     background: #FFFEFE;
     
 }
@@ -275,7 +279,9 @@ p {
     font-weight: 600;
     font-size:2.5em;
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
+    margin-top:40px;
+
 }
 #opportunities .opportunities-container .opportunities-TextContainer .opportunities-text{
     color: rgba(0, 0, 0, 0.7);
@@ -298,7 +304,7 @@ p {
     color:rgba(50, 27, 73, 1);
     font-size: 1.5em;
     text-align: center;
-    margin:120px;
+    margin:80px 150px;
 }
 
 
@@ -328,7 +334,7 @@ p {
     justify-content: flex-end;
     margin-right: 200px;
     padding: 30px;
-   
+    
 }
 .contacto {
     height: 972px;
