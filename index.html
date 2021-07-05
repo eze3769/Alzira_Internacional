@@ -83,46 +83,53 @@
             <div class="row justify-content-md-center">
                 <article class="col-4">
                 <figure>
-                    <p>Reporte Individual</p>
+                    <p>EDUCACIÓN</p>
                 </figure>
                 </article>
                 <article class="col-4">
                 <figure>
-                    <p>Partidos amistosos</p>
+                    <p>VISADO</p>
                 </figure>
                 </article>
             </div>
             <div class="row row-3 justify-content-around" >
                 <article class="col-4 ">
                 <figure>
-                    <p>Medicina deportiva</p>
+                    <p>COMPETICIÓN</p>
                 </figure>
                 </article>
                 <article class="col-4">
                 <figure>
-                    <p>Profesional Calificado</p>
+                    <p>360</p>
                 </figure>
                 </article>
                 <article class="col-4 ">
                 <figure>
-                    <p>Centro de alto rendimiento</p>
+                    <p>ENTRENADORES UEFA PRO</p>
                 </figure> 
                 </article>
             </div>
             <div class="row justify-content-md-center">
                 <article class="col-4">
                 <figure>
-                    <p>Visado</p>
+                    <p>SEGUIMIENTO INDIVIDUAL</p>
                 </figure>
                 </article>
                 <article class="col-4">
                 <figure>
-                    <p>Educación</p>
+                    <p>CLIMA MEDITERRANEO</p>
                 </figure>
             </article>
             </div>
         </section>
+        <div class="contenedor-flecha">
+            <img class="img-flecha" src="/images/navegar-flecha-hacia-arriba.png" alt="">
+        </div>
+        <div class="contenedor-btn">
+            <button class="mas-info-btn">¡MÁS INFO!</button>
+        </div>
     </section>
+
     <section id="opportunities">
         <div class="opportunities-container full-sized">
             <div class="opportunities-TextContainer">
@@ -135,8 +142,83 @@
         <img src="" alt="redes">
         <img src="" alt="redes">
         <img src="" alt="redes">
-    </footer>
 
+      
+    <section class="contacto">
+        <div class="container-form ">
+            <h3 class="contacto-title text-center">CONTACTO</h3>
+            <p class="contacto-p text-center">¿Quieres saber más acerca de nosotros?</p>
+            <p class="contacto-p text-center">Escríbenos y te enviaremos toda la información que necesitas para alcanzar tus sueños.</p>
+            <form class="needs-validation" novalidate>
+                <div class="">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">E-mail*</label>
+                    <input type="email" class="form-control" id="validationCustom01" required>
+                    <div class="invalid-feedback">
+                        Debe completar un e-mail válido.
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Asunto*</label>
+                    <input type="text" class="form-control" id="validationCustom02" required>
+                    <div class="invalid-feedback">
+                        Debe agregar un asunto.
+                    </div>
+                  </div>
+                </div>
+                <div class="">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom03">Escríbanos aquí*</label>
+                    <textarea  class="form-control" id="validationCustom03" required></textarea>
+                    <div class="invalid-feedback">
+                      Por favor, escriba un mensaje antes de enviar.
+                    </div>
+                  </div>
+                <div class="contenedor-btn">
+                    <button class="btn btn-primary " type="submit">ENVIAR</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="container container-map">
+        <div class="direccion-container">
+            <p>NUESTRA UBICACIÓN</p>
+            <p><span>Dirección:</span>U.D. Alzira,1</p>
+            <p><span>Teléfono:</span>93 241.91.64</p>
+            <p><span>Email:</span>info@UD.Alzira.com</p>
+            <p><span>Horario:</span>Lunes-Viernes 09:00-18:00</p>
+        </div>
+        <iframe class="mapa " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3093.3425217912563!2d-0.43345558425239544!3d39.1669333386155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61b06cd91b0f7b%3A0xb93f5e69a42cd827!2sEstadio%20Luis%20Su%C3%B1er%20Pic%C3%B3!5e0!3m2!1ses!2sar!4v1624587012086!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <footer class="col text-center">
+        <h3 class="tit-footer">NUESTRAS REDES</h3>
+        <img class="img-footer-redes" src="/images/youtube.png" alt="youtube">
+        <img class="img-footer-redes" src="/images/instagram-icono.png" alt="instagram">
+        <img class="img-footer-redes" src="/images/facebook-icono.png" alt="facebook">
+        <hr>
+        <p>Copyright © 2021 U.D Alzira. Todos los derechos reservados.</p>
+
+    </footer>
+    <!--script formulario-->
+    <script>
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

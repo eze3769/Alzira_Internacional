@@ -240,6 +240,7 @@ p {
     background: linear-gradient(90deg, rgba(6, 5, 61, 0.87) 61.28%, #85001F 103.12%);
 }
 
+
 /*Sección ¿Estás Listo? */
 
 #opportunities .opportunities-container{
@@ -251,3 +252,91 @@ p {
 .opportunities-TextContainer{
     
 }
+=======
+.contenedor-btn {
+    display: flex;
+    justify-content: center !important;
+}
+
+.mas-info-btn {
+    background-color: transparent;
+    border: 4px solid white;
+    height: 80px;
+    width: 200px;
+    color: white;
+    font-size: larger;
+}
+.img-flecha {
+    width: 130px;
+    position: relative;
+    background-color: white;
+    border-radius: 10%;
+}
+.contenedor-flecha{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px;
+    padding: 30px;
+   
+}
+.contacto {
+    height: 972px;
+    background: linear-gradient(52.69deg, #920000 34.58%, rgba(6, 5, 61, 0.87) 76%);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 200px;
+}
+.container-form {
+    width: 800px;
+    padding-right: 100px;
+   
+}
+.contacto-title {
+    color: white;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+}
+.contacto-p {
+    margin-top: 80px;
+    font-size: 26px;
+}
+label {
+    font-size: 18px;
+    color: #ffffff;
+}
+textarea {
+    width: 780px !important;
+}
+input {
+    width: 780px !important;
+}
+.mapa{
+    width: 1400px;
+    height: 675px;
+}
+
+.container-map {
+    position: relative;
+    display: inline-block;
+}
+.direccion-container {
+    background-color: black;
+    opacity: 80%;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+.img-footer-redes {
+    height: 110px;;
+}
+footer {
+    height: 365px;
+    background: linear-gradient(95.81deg, #920101 32.4%, #06054E 93.99%);
+}
+.tit-footer {
+    font-size: 48px;
+    color: white;
+    font-family: Montserrat;
+}
+
