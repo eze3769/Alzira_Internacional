@@ -7,6 +7,15 @@
 html {
     scroll-behavior: smooth;
 }
+
+.full-sized{
+    height: 100vh;
+    margin:20px 0;
+}
+.extra-sized{
+    width: 100%;
+    height: 180vh;
+}
 .navbar .logo{
     position: absolute;
     width: 115px;
@@ -88,10 +97,7 @@ html {
     padding-bottom: 30px;
     margin:20px;
 }
-.full-sized{
-    height: 100vh;
-    margin:20px 0;
-}
+
 /* Sección acerca de nosotros*/
 #aboutUs{
     padding: 40px 20px;
@@ -248,34 +254,32 @@ p {
 
 /*Sección oportunidad */
 
-#opportunities .opportunities-backgroundContainer{
+.opportunities .opportunities-backgroundContainer{
     background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
-    clip-path: polygon(0% 0%, 40% 0%, 15% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 55% 0%, 15% 100%, 0% 100%);
     display: flex;
     position:absolute;
-    width: 100%;
-    height: 180vh;
+    
 }
 
-#opportunities .opportunities-container{
+.opportunities .opportunities-container{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 180vh;
     background: #FFFEFE;
     
 }
-#opportunities .opportunities-container .opportunities-img{
-    width: 28vw;
+.opportunities .opportunities-container .opportunities-img{
+    width: 35vw;
     z-index: 2;
 
 }
-#opportunities .opportunities-container .opportunities-TextContainer{
+.opportunities .opportunities-container .opportunities-TextContainer{
     display: flex;
     flex-direction: column;
     width: 45vw;
 }
-#opportunities .opportunities-container .opportunities-TextContainer .opportunities-TextContainerTitle{
+.opportunities .opportunities-container .opportunities-TextContainer .opportunities-TextContainerTitle{
     font-weight: 600;
     font-size:2.5em;
     text-align: center;
@@ -283,19 +287,19 @@ p {
     margin-top:40px;
 
 }
-#opportunities .opportunities-container .opportunities-TextContainer .opportunities-text{
+.opportunities .opportunities-container .opportunities-TextContainer .opportunities-text{
     color: rgba(0, 0, 0, 0.7);
     font-weight: 400;
     line-height: 30px;
     padding-bottom: 20px;
     letter-spacing: 0.05em;
 }
-#opportunities .opportunities-container .opportunities-TextContainer .opportunities-highlightedText{
+.opportunities .opportunities-container .opportunities-TextContainer .opportunities-highlightedText{
     font-size: 1.5em;
     font-weight: 600;
     color: rgba(0, 0, 0, 9);
 }
-#opportunities .opportunities-container .opportunities-TextContainer .opportunities-btn{
+.opportunities .opportunities-container .opportunities-TextContainer .opportunities-btn{
     font-weight: 600;
     display: inline-block;
     padding: 18px 20px;
@@ -304,10 +308,42 @@ p {
     color:rgba(50, 27, 73, 1);
     font-size: 1.5em;
     text-align: center;
-    margin:80px 150px;
+    margin:80px 120px;
+}
+.formation .formation-backgroundContainer{
+    background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
+    clip-path: polygon(100% 0%, 85% 0%, 45% 100%, 100% 100%);
+    display: flex;
+    position:absolute;
+    z-index: 2;
+    
+}
+.formation .formation-container{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #FFFEFE;
+}
+.formation .formation-container .formation-textContainer{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+}
+.formation .formation-container .formation-text{
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 20px;
+    letter-spacing: 0.05em;
+
 }
 
-
+.formation .formation-container .formation-imgContainer .formation-img{
+    width: 30vw;
+    z-index: 2;
+    opacity: 2;
+    margin-top: 150px;
+}
 
 
 .contenedor-btn {
