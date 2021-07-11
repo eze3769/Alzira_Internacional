@@ -100,7 +100,7 @@ html {
 
 /* Sección acerca de nosotros*/
 #aboutUs{
-    padding: 40px 20px;
+    padding: 40px 30px;
     background: #FFFEFE;
 
 }
@@ -143,7 +143,7 @@ html {
     font-weight: 600;
     font-size: 40px;
     color: rgba(0, 0, 0, 1);
-    padding:10px;
+    padding:20px;
     line-height: 40px;
 }
 #aboutUs .calendarBox{
@@ -284,7 +284,7 @@ p {
     font-size:2.5em;
     text-align: center;
     padding: 60px 0;
-    margin-top:40px;
+    margin-top:20px;
 
 }
 .opportunities .opportunities-container .opportunities-TextContainer .opportunities-text{
@@ -310,24 +310,55 @@ p {
     text-align: center;
     margin:80px 120px;
 }
-.formation .formation-backgroundContainer{
+.formation .formation-container .formation-backgroundContainer{
     background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
     clip-path: polygon(100% 0%, 85% 0%, 45% 100%, 100% 100%);
     display: flex;
     position:absolute;
     z-index: 2;
-    
+   
 }
 .formation .formation-container{
     display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-between;
     background: #FFFEFE;
+    
+    
 }
 .formation .formation-container .formation-textContainer{
     display: flex;
     flex-direction: column;
-    width: 45vw;
+    width: 55vw;
+    padding-left: 65px;
+
+}
+.formation .formation-container .formation-textContainer .formation-textContainerTitle{
+    width: max-content;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 43px;
+    letter-spacing: 0.6vw;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.formation .formation-container .formation-textContainer .formation-textContainerSubtitle{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #6B002C;
+    padding-bottom: 80px;
+    padding-top:60px;
+}
+.formation .formation-container .formation-textContainer .formation-textRed{
+    color:#6B002C;
+}
+.formation .formation-container .formation-textContainer .formation-redBullet{
+    color:#6B002C;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    padding-right:20px;
+    
 }
 .formation .formation-container .formation-text{
     color: rgba(0, 0, 0, 0.7);
@@ -337,12 +368,36 @@ p {
     letter-spacing: 0.05em;
 
 }
-
+.formation .formation-container .formation-textContainer .formation-bulletContainer{
+    display:flex;
+    align-content: center;
+}
 .formation .formation-container .formation-imgContainer .formation-img{
     width: 30vw;
-    z-index: 2;
-    opacity: 2;
-    margin-top: 150px;
+    position: absolute;
+    right: 0;
+    top:250px;
+    bottom:10px;
+    z-index: 3;
+    
+    
+}
+.facilities{
+    padding: 65px;
+    width: 100vw;
+}
+
+.facilities .facilities-title{
+    font-weight: 600;
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+    padding: 80px;
+}
+.facilities .facilities-img{
+    padding-bottom: 60px;
+    display: block;
+    width: 100%;
 }
 
 
