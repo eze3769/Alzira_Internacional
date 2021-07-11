@@ -284,7 +284,7 @@ p {
     font-size:2.5em;
     text-align: center;
     padding: 60px 0;
-    margin-top:40px;
+    margin-top:20px;
 
 }
 .opportunities .opportunities-container .opportunities-TextContainer .opportunities-text{
@@ -321,7 +321,6 @@ p {
 .formation .formation-container{
     display:flex;
     justify-content: space-between;
-    align-items: center;
     background: #FFFEFE;
     
     
@@ -329,12 +328,37 @@ p {
 .formation .formation-container .formation-textContainer{
     display: flex;
     flex-direction: column;
-    width: 45vw;
+    width: 55vw;
     padding-left: 65px;
+
 }
 .formation .formation-container .formation-textContainer .formation-textContainerTitle{
-    
     width: max-content;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    line-height: 43px;
+    letter-spacing: 0.6vw;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.formation .formation-container .formation-textContainer .formation-textContainerSubtitle{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #6B002C;
+    padding-bottom: 80px;
+    padding-top:60px;
+}
+.formation .formation-container .formation-textContainer .formation-textRed{
+    color:#6B002C;
+}
+.formation .formation-container .formation-textContainer .formation-redBullet{
+    color:#6B002C;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    padding-right:20px;
+    
 }
 .formation .formation-container .formation-text{
     color: rgba(0, 0, 0, 0.7);
@@ -344,7 +368,10 @@ p {
     letter-spacing: 0.05em;
 
 }
-
+.formation .formation-container .formation-textContainer .formation-bulletContainer{
+    display:flex;
+    align-content: center;
+}
 .formation .formation-container .formation-imgContainer .formation-img{
     width: 30vw;
     position: absolute;
@@ -355,7 +382,23 @@ p {
     
     
 }
+.facilities{
+    padding: 65px;
+    width: 100vw;
+}
 
+.facilities .facilities-title{
+    font-weight: 600;
+    font-size: 2.5em;
+    color: #000000;
+    text-align: center;
+    padding: 80px;
+}
+.facilities .facilities-img{
+    padding-bottom: 60px;
+    display: block;
+    width: 100%;
+}
 
 
 .contenedor-btn {
