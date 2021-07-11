@@ -62,10 +62,7 @@ html {
     padding:0;
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
-   
-    
 }
-
 .container-fluid  .presentation-container{
     padding: 3vw;
     display: flex;
@@ -74,7 +71,6 @@ html {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    
 }
 .presentation-text-container{
     display:flex;
@@ -206,9 +202,8 @@ html {
     padding-left: 2vmin;
     margin: .5rem auto;
   
-  }
-
-  article {
+}
+article {
     background: linear-gradient(59.54deg, #232252 20.35%, #151515 164.58%);
     width: var(--width); 
     height: var(--height);
@@ -218,10 +213,9 @@ html {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     filter: drop-shadow(0 0 1px #fff);
     margin: 2vmin;
-  }
-  
+}
   /*hexagonos*/
-  figure {
+figure {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -232,23 +226,30 @@ html {
     transition: .75s .05s;
     hyphens: auto;
     text-align: center;
+}
+.p-services-style-w, .p-services-style-r {
+    font-family: 'Frijole', cursive;
+    font-size: 36px;
   }
-  
-.h2-style {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    width: 50%;
+.p-services-style-w {
     padding-top: 50px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-  }
-
-p {
     color: white;
+}
+.p-services-style-r {
+    color: #930451;
+}
+figure p {
+    font-family: 'Frijole', cursive;
+    color: white;
+    font-size: 20px;
+}
+figure img {
+    width: 80px;
 }
 
 .container-panal {
     background: linear-gradient(90deg, rgba(6, 5, 61, 0.87) 61.28%, #85001F 103.12%);
+
 }
 
 
@@ -400,7 +401,11 @@ p {
     width: 100%;
 }
 
-
+.img-form {
+    width: 500px;
+    height: 558px;
+    margin-top: 50px;
+}
 .contenedor-btn {
     display: flex;
     justify-content: center !important;
@@ -413,6 +418,7 @@ p {
     width: 200px;
     color: white;
     font-size: larger;
+    margin-bottom: 50px;
 }
 .img-flecha {
     width: 130px;
@@ -420,16 +426,22 @@ p {
     background-color: white;
     border-radius: 10%;
 }
-.contenedor-flecha{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 200px;
-    padding: 30px;
-    
+
+.contenedor-btn button {
+    background-color: #232252;
+}
+.color-arrow-drop-up {
+    color: white;
+    margin-left: 80px;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #007bff;
+    background-color: #232252;
 }
 .contacto {
     height: 972px;
-    background: linear-gradient(52.69deg, #920000 34.58%, rgba(6, 5, 61, 0.87) 76%);
+    background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
     display: flex;
     justify-content: flex-end;
     padding-right: 200px;
@@ -448,6 +460,7 @@ p {
 .contacto-p {
     margin-top: 80px;
     font-size: 26px;
+    color: white;
 }
 label {
     font-size: 18px;
@@ -455,36 +468,55 @@ label {
 }
 textarea {
     width: 780px !important;
+    height: 140px !important;
+    resize: none;
 }
+
 input {
     width: 780px !important;
 }
-.mapa{
-    width: 1400px;
-    height: 675px;
-}
 
+/*mapa*/
 .container-map {
-    position: relative;
-    display: inline-block;
-}
+    display: flex;
+    justify-content: space-around;
+} 
 .direccion-container {
-    background-color: black;
-    opacity: 80%;
-    position: absolute;
-    top: 100px;
-    left: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
+.direccion-container-tit {
+    color: #920101;
+}
+.direccion-container-p {
+    color: #000000;
+}
+.direccion-container p span{
+    font-weight: bolder;
+}
+/*footer*/
 .img-footer-redes {
-    height: 110px;;
+    height: 40px;
+}
+.ig {
+    margin: 0 40px;
 }
 footer {
     height: 365px;
-    background: linear-gradient(95.81deg, #920101 32.4%, #06054E 93.99%);
+    background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
 .tit-footer {
     font-size: 48px;
     color: white;
     font-family: Montserrat;
+}
+footer p {
+    color:white;
 }
 
