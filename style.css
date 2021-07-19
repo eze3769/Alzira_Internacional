@@ -7,7 +7,12 @@
 html {
     scroll-behavior: smooth;
 }
-
+.nav-link{
+    width:max-content;
+}
+.navbar-default{
+    background-color: #862f38;
+}
 .full-sized{
     height: 100vh;
     margin:20px 0;
@@ -30,10 +35,11 @@ html {
     width: 40px;
     top:30px;
     right: 0px;
-
+    transition: linear 0.2s;
 }
 .navbar .language-logo:hover{
     cursor:pointer;
+    transform: scale(1.1);
 
 }
 /* d */
@@ -41,6 +47,7 @@ html {
     color:#FFFEFE;
     font-family: 'Montserrat', sans-serif;
 }
+
 .navbar .navbar-collapse{
     
     justify-content: center;
@@ -48,6 +55,10 @@ html {
 }
 .navbar .navbar-collapse .nav-link{
     padding: 8px 30px;
+    transition:linear 0.3s;
+}
+.navbar .navbar-collapse .nav-link:hover{
+    transform: scale(0.97);
 }
 .btn{
     
@@ -60,10 +71,16 @@ html {
     background-color:  #7F1C3B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 70px;
+    transition: linear 0.2s;
+}
+.btn:hover{
+    background-color: #f7e6e6;
+    transform: scale(0.98);
+    color: #7F1C3B;
 }
 .background-container {
     padding:0;
-    background-image: url("images/background.jpg");
+    background-image: url("./images/background.jpg");
     background-repeat: no-repeat;
 }
 .container-fluid  .presentation-container{
@@ -84,7 +101,7 @@ html {
     color: #fffefe00;
     font-size: 0;
     padding:50px 300px;
-    background-image: url("/images/h1-main.png");
+    background-image: url("images/h1Main.png");
     background-size:100%;
     background-repeat: no-repeat;
   }
@@ -129,6 +146,10 @@ html {
     text-align: center;
     padding:30px;
     font-size: 18px;
+    
+}
+#aboutUs .aboutUs-textContainer .aboutUs-enhanceSuscribe a{
+color:rgba(0, 0, 0, 0.9)
 }
 #aboutUs .aboutUs-textContainer .aboutUs-enhanceSuscribe:hover{
     cursor:pointer;
@@ -138,10 +159,11 @@ html {
 }
 #aboutUs .aboutUs-img{
     width: 38vw;
+    height: 100%;
 }
 .section-title{
     font-weight: 600;
-    font-size: 40px;
+    font-size: 2.5em;
     color: rgba(0, 0, 0, 1);
     padding:20px;
     line-height: 40px;
@@ -177,7 +199,7 @@ html {
 
 }
 
-/*Sección servicios*/
+
 
 /*Sección servicios*/
 @media screen and (min-width: 769px) {
@@ -258,6 +280,10 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    /* Presentation */
+
+
+
     .container-panal {
         display: none;
     }    
@@ -355,17 +381,26 @@ html {
     font-weight: 600;
     color: rgba(0, 0, 0, 9);
 }
-.opportunities .opportunities-container .opportunities-TextContainer .opportunities-btn{
+.opportunities .opportunities-container .opportunities-btnContainer{
+    display: flex;
+    justify-content: center;
+}
+.opportunities .opportunities-container .opportunities-btn{
     font-weight: 600;
     display: inline-block;
-    padding: 18px 20px;
+    padding: 18px 35px;
     border: 4px solid #351946;
     background: #FFFEFE;
     color:rgba(50, 27, 73, 1);
     font-size: 1.5em;
-    text-align: center;
-    margin:80px 120px;
+    
+    width: fit-content;
+    
 }
+.opportunities .opportunities-container .opportunities-btn:hover{
+    color: #7F1C3B;
+}
+
 .formation .formation-container .formation-backgroundContainer{
     background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
     clip-path: polygon(100% 0%, 85% 0%, 45% 100%, 100% 100%);
@@ -456,6 +491,167 @@ html {
     width: 100%;
 }
 
+@media screen and (max-width: 1091px) {
+    .navbar{
+        justify-content: unset;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .navbar .logo{
+        position:relative;
+        margin-left: 33vw;
+        
+    }
+    .opportunities .opportunities-container .opportunities-TextContainer .opportunities-TextContainerTitle{
+        font-size: 2em;
+    }
+    .opportunities .opportunities-container .opportunities-TextContainer{
+        width: 40vw;
+    }
+    .section-title{
+        font-size: 2em;
+    }
+    .formation .formation-container .formation-textContainer .formation-textContainerTitle{
+        font-size: 1.5em;
+    }
+    .facilities .facilities-title{
+        font-size: 2em;
+    }
+    #aboutUs .calendarBox .calendarBox-TextContainer .calendarBox-text {
+        font-size: 1em;
+}
+#aboutUs .calendarBox .calendarBox-img{
+    width: 60px;
+    padding:10px;
+}
+#aboutUs .calendarBox{
+    width: 400px;
+    height: 90px;
+    margin-bottom: unset;
+}
+}
+@media screen and (max-width: 992px){
+    .navbar .logo{
+        display:none;
+    }
+    .navbar{
+        padding-top: 2rem;
+    }
+    .navbar .language-logo{
+        right: 15px;
+    }
+    body{
+        font-size: 0.7em;
+    }
+    .extra-sized{
+        height: unset;
+    }
+    .presentation-subtitle{
+        font-size:1em;
+
+    }
+    .presentation-title{
+        padding: 25px 160px;
+    }
+    
+    #aboutUs{
+        margin-bottom: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: unset;
+    }
+    #aboutUs .aboutUs-textContainer{
+        flex-direction: column-reverse;
+        padding:10px
+    }
+    #aboutUs .aboutUs-img {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    #aboutUs .calendarBox{
+        width: 80%;
+        height: 90px;
+        margin: 20px;
+    }
+    #aboutUs .aboutUs-textContainer .sectionEnhance-img {
+        margin-top: 10px;
+        width: 100%;
+    }
+    #aboutUs .aboutUs-textContainer .aboutUs-sectionText{
+        color:rgba(0, 0, 0, 0.9);
+    }
+    #aboutUs .aboutUs-textContainer .aboutUs-enhanceText{
+        padding: unset;
+       
+    }
+    .section-title{
+        padding:unset;
+    }
+    .opportunities .opportunities-container {
+        align-items:unset;
+        
+    }
+    
+    .opportunities .opportunities-backgroundContainer{
+        display:none;
+    }
+    .opportunities .opportunities-container .opportunities-img{
+        position: absolute;
+        margin-top: 35vh;
+        width: 80%;
+        opacity: 0.2;
+    }
+    .opportunities .opportunities-container .opportunities-TextContainer{
+        width: 100%;
+        z-index: 2;
+        padding:20px
+    }
+    .formation .formation-container .formation-textContainer{
+        width: unset;
+        padding:0 20px;
+    }
+    .opportunities .opportunities-container .opportunities-TextContainer .opportunities-text {
+        color: rgba(0, 0, 0, 0.9);
+    }
+    
+    .formation .formation-container .formation-textContainer .formation-textContainerTitle{
+        width: 100%;
+        padding: unset;
+        font-weight: 800;
+        font-size: 2em;
+        text-align: center;
+    }
+    .formation .formation-container .formation-text {
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .formation .formation-container .formation-backgroundContainer{
+        background: unset;
+        position: absolute;
+        clip-path: unset;
+        
+    }
+    .formation .formation-container .formation-imgContainer .formation-img{
+        top: 130px;
+        width: 70vw;
+        opacity: 0.4;
+    }
+    .formation .formation-container .formation-textContainer .formation-textContainerSubtitle {
+        font-weight: 800;
+        font-size: 2em;
+        padding-bottom: 30px;
+    }
+    .formation .formation-container .formation-textContainer .formation-redBullet {
+        font-size: 1.5rem;
+    }
+    .facilities {
+        padding: 20px;
+    }
+    .facilities .facilities-title {
+        padding:30px;
+    }
+}
 /*contacto*/
 @media screen and (max-width: 768px) {
     .img-form {
@@ -631,6 +827,3 @@ footer p {
 
 /* Responsive for medium screens */
 
-@media only screen and (max-width: 769px) {
-    
-  }
