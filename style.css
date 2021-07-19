@@ -508,8 +508,123 @@ html {
     margin-bottom: unset;
 }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
+    .navbar .logo{
+        display:none;
+    }
+    .navbar{
+        padding-top: 2rem;
+    }
+    .navbar .language-logo{
+        right: 15px;
+    }
+    body{
+        font-size: 0.7em;
+    }
+    .extra-sized{
+        height: unset;
+    }
+    .presentation-subtitle{
+        font-size:1em;
 
+    }
+    .presentation-title{
+        padding: 25px 160px;
+    }
+    
+    #aboutUs{
+        margin-bottom: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: unset;
+    }
+    #aboutUs .aboutUs-textContainer{
+        flex-direction: column-reverse;
+        padding:10px
+    }
+    #aboutUs .aboutUs-img {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    
+    #aboutUs .calendarBox{
+        width: 80%;
+        height: 90px;
+        margin: 20px;
+    }
+    #aboutUs .aboutUs-textContainer .sectionEnhance-img {
+        margin-top: 10px;
+        width: 100%;
+    }
+    #aboutUs .aboutUs-textContainer .aboutUs-enhanceText{
+        padding: unset;
+    }
+    .section-title{
+        padding:unset;
+    }
+    .opportunities .opportunities-container {
+        align-items:unset;
+        
+    }
+    
+    .opportunities .opportunities-backgroundContainer{
+        display:none;
+    }
+    .opportunities .opportunities-container .opportunities-img{
+        position: absolute;
+        margin-top: 40vh;
+        width: 80%;
+        opacity: 0.2;
+    }
+    .opportunities .opportunities-container .opportunities-TextContainer{
+        width: 100%;
+        z-index: 2;
+        padding:20px
+    }
+    .formation .formation-container .formation-textContainer{
+        width: unset;
+        padding:0 20px;
+    }
+    .opportunities .opportunities-container .opportunities-TextContainer .opportunities-text {
+        color: rgba(0, 0, 0, 0.9);
+    }
+    
+    .formation .formation-container .formation-textContainer .formation-textContainerTitle{
+        width: 100%;
+        padding: unset;
+        font-weight: 800;
+        font-size: 2em;
+        text-align: center;
+    }
+    .formation .formation-container .formation-text {
+        color: rgba(0, 0, 0, 0.9);
+    }
+    .formation .formation-container .formation-backgroundContainer{
+        background: unset;
+        position: absolute;
+        clip-path: unset;
+        
+    }
+    .formation .formation-container .formation-imgContainer .formation-img{
+        top: 130px;
+        width: 70vw;
+        opacity: 0.4;
+    }
+    .formation .formation-container .formation-textContainer .formation-textContainerSubtitle {
+        font-weight: 800;
+        font-size: 2em;
+        padding-bottom: 30px;
+    }
+    .formation .formation-container .formation-textContainer .formation-redBullet {
+        font-size: 1.5rem;
+    }
+    .facilities {
+        padding: 20px;
+    }
+    .facilities .facilities-title {
+        padding:30px;
+    }
 }
 /*contacto*/
 @media screen and (max-width: 768px) {
