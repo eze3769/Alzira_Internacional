@@ -18,10 +18,10 @@
 </head>
 <body>
         
-    <section class="container-fluid background-container">
+    <section class="container-fluid background-container" id="main">
         <div class="presentation-container">
-            <nav class="navbar navbar-expand-lg navbar-light  container">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo UD" class="logo"></a>
+            <nav class="navbar navbar-expand-lg navbar-light  container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo UD" class="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,7 +31,7 @@
                     <a class="nav-link active" data-ref="nav1" href="#services"><span class="spa-text">Servicios</span><span class="eng-text">Services</span> <span class="sr-only"></span></a>
                     <a class="nav-link active" data-ref="nav2" href="#formation"><span class="spa-text">Formación</span><span class="eng-text">Formation</span> <span class="sr-only"></span></a>
                     <a class="nav-link active" data-ref="nav3" href="#opportunities"><span class="spa-text">Oportunidades</span><span class="eng-text">Opportunities</span><span class="sr-only"></span></a>
-                    <a class="nav-link active" data-ref="nav4" href="#"><span class="spa-text">Contacto</span><span class="eng-text">Contact</span> <span class="sr-only"></span></a>
+                    <a class="nav-link active" data-ref="nav4" href="#contact"><span class="spa-text">Contacto</span><span class="eng-text">Contact</span> <span class="sr-only"></span></a>
                   </div>
                 </div>
                 <div>
@@ -41,14 +41,17 @@
               <div class="presentation-text-container">
                 <h2 class="presentation-subtitle"><span class="spa-text">LLEVA TU CARRERA AL SIGUIENTE NIVEL</span><span class="eng-text">TAKE YOUR CAREER INTO THE NEXT LEVEL</span></h2>
                 <h1 class="presentation-title">U.D ALZIRA ACADEMY</h1>
-              </div>           
-            <button class="btn "><span class="spa-text">INSCRÍBETE</span><span class="eng-text">SIGN UP</span></button>
+              </div>       
+              
+                <button class="btn "><span class="spa-text">INSCRÍBETE</span><span class="eng-text">SIGN UP</span></button>
+            
+              
             
         </div>
     </section>
 <!--about us-->
     <section id="aboutUs" >
-        <div class="container full-sized">
+        <div class="container-fluid full-sized">
             <h2 class="section-title"><span class="spa-text">SOBRE NOSOTROS</span><span class="eng-text">ABOUT US</span></h2>
             <div class="aboutUs-textContainer">
                 <div>
@@ -73,7 +76,7 @@
                     <h3 class="section-title text-center"><span class="spa-text">¡ÚNETE PARA POTENCIAR TU CARRERA!</span><span class="eng-text">JOIN TO BOOST YOUR CAREER!</span></h3>
                     <p class="aboutUs-enhanceText "><span class="spa-text">¿Tienes entre 17 y 25 años?</span><span class="eng-text">Are you between 17 and 25 years old?</span></p>
                     <p class="aboutUs-enhanceText "><span class="spa-text">¿Te gustaría ser un profesional del futbol?</span><span class="eng-text">Would you like to be a professional football player?</span></p>
-                    <h4 class="aboutUs-enhanceSuscribe"><span class="spa-text">¡Inscríbete!</span><span>Sign up!</span></h4>
+                    <h4 class="aboutUs-enhanceSuscribe"><span class="spa-text">¡Inscríbete!</span><span class="eng-text">Sign up!</span></h4>
                     <p class="aboutUs-enhanceText"><span class="spa-text">La UD Alzira militará esta temporada 2021-2022 en la nueva categoría 2a División RFEF, coincidiendo con el año de su centenario.</span><span class="eng-text">UD Alzira will compete this season 2021-2022 in the new 2nd RFEF Division category, coinciding with the year of its centenary.</span></p>
                 </div>
             </div>
@@ -188,7 +191,9 @@
                 <p class="opportunities-text"><span class="spa-text">Si estás buscando el éxito <b>como jugador de fútbol</b>, la opción de inscribirte en un <b>programa de entrenamiento de élite</b> es definitivamente la mejor oportunidad para que impulses tu carrera y te conviertas en el <b>profesional del fútbol internacional</b> que siempre soñaste.</span><span class="eng-text">If you want to<b> success as a soccer player </b>, the best option is to join our<b> elite training program</b>. This is definitely the best opportunity for you to boost your career and become the <b> international soccer professional </b> you've always dreamed of.</span></p>
                 <p class="opportunities-text"><span class="spa-text">La combinación ideal entre educación, preparación física, seguimiento nutricional, <i>competición, pruebas</i> y el excelente <i>clima del mediterráneo</i> va a permitir que <b>superes tus límites</b> y <b>triunfes</b> dentro del entorno perfecto.</span><span class="eng-text">The ideal combination of education, physical preparation, nutritional monitoring, <i> competition, tests </i> and the excellent <i> Mediterranean climate </i> will allow you to <b> exceed your limits </b> and <b> succeed </b> in the perfect environment.</span></p>
                 <p class="opportunities-highlightedText"><span class="spa-text">¡No esperes más, es HOY el momento de decidir qué jugador quieres ser!</span><span class="eng-text">Wait no more, it is TODAY the time to decide which player you want to be!</span></p>
-                <button class="btn opportunities-btn"><span class="spa-text">¡INSCRÍBETE!</span><span class="eng-text">SIGN UP!</span></button>
+                <div class="opportunities-btnContainer">
+                    <button class="btn opportunities-btn"><span class="spa-text">¡INSCRÍBETE!</span><span class="eng-text">SIGN UP!</span></button>
+            </div>
             </div>
         </div>
     </section>
@@ -220,7 +225,7 @@
         <img class="facilities-img" src="images/stadium.jpg" alt="stadium">
     </section>
     <!--contacto-->
-    <section class="contacto ">
+    <section class="contacto" id="contact">
         <div class="">
             <img class="img-form" src="images/image 166.png" alt="ilustración jugador pateando la pelota">
         </div>
@@ -255,7 +260,7 @@
                   </div>
                 <div class="contenedor-btn">
                     <button class="btn btn-primary " type="submit">ENVIAR</button>
-                    <a href="index.html">
+                    <a href="#main">
                         <span class="material-icons color-arrow-drop-up">
                             keyboard_arrow_up
                         </span>

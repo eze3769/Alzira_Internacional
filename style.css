@@ -7,7 +7,9 @@
 html {
     scroll-behavior: smooth;
 }
-
+.nav-link{
+    width:max-content;
+}
 .full-sized{
     height: 100vh;
     margin:20px 0;
@@ -138,10 +140,11 @@ html {
 }
 #aboutUs .aboutUs-img{
     width: 38vw;
+    height: 100%;
 }
 .section-title{
     font-weight: 600;
-    font-size: 40px;
+    font-size: 2.5em;
     color: rgba(0, 0, 0, 1);
     padding:20px;
     line-height: 40px;
@@ -177,7 +180,7 @@ html {
 
 }
 
-/*Sección servicios*/
+
 
 /*Sección servicios*/
 @media screen and (min-width: 769px) {
@@ -258,6 +261,10 @@ html {
 }
 
 @media screen and (max-width: 768px) {
+    /* Presentation */
+
+
+
     .container-panal {
         display: none;
     }    
@@ -355,17 +362,23 @@ html {
     font-weight: 600;
     color: rgba(0, 0, 0, 9);
 }
-.opportunities .opportunities-container .opportunities-TextContainer .opportunities-btn{
+.opportunities .opportunities-container .opportunities-btnContainer{
+    display: flex;
+    justify-content: center;
+}
+.opportunities .opportunities-container .opportunities-btn{
     font-weight: 600;
     display: inline-block;
-    padding: 18px 20px;
+    padding: 18px 35px;
     border: 4px solid #351946;
     background: #FFFEFE;
     color:rgba(50, 27, 73, 1);
     font-size: 1.5em;
-    text-align: center;
-    margin:80px 120px;
+    
+    width: fit-content;
+    
 }
+
 .formation .formation-container .formation-backgroundContainer{
     background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
     clip-path: polygon(100% 0%, 85% 0%, 45% 100%, 100% 100%);
@@ -456,6 +469,48 @@ html {
     width: 100%;
 }
 
+@media screen and (max-width: 1091px) {
+    .navbar{
+        justify-content: unset;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    .navbar .logo{
+        position:relative;
+        margin-left: 33vw;
+        
+    }
+    .opportunities .opportunities-container .opportunities-TextContainer .opportunities-TextContainerTitle{
+        font-size: 2em;
+    }
+    .opportunities .opportunities-container .opportunities-TextContainer{
+        width: 40vw;
+    }
+    .section-title{
+        font-size: 2em;
+    }
+    .formation .formation-container .formation-textContainer .formation-textContainerTitle{
+        font-size: 1.5em;
+    }
+    .facilities .facilities-title{
+        font-size: 2em;
+    }
+    #aboutUs .calendarBox .calendarBox-TextContainer .calendarBox-text {
+        font-size: 1em;
+}
+#aboutUs .calendarBox .calendarBox-img{
+    width: 60px;
+    padding:10px;
+}
+#aboutUs .calendarBox{
+    width: 400px;
+    height: 90px;
+    margin-bottom: unset;
+}
+}
+@media screen and (max-width: 768px){
+
+}
 /*contacto*/
 @media screen and (max-width: 768px) {
     .img-form {
@@ -631,6 +686,3 @@ footer p {
 
 /* Responsive for medium screens */
 
-@media only screen and (max-width: 769px) {
-    
-  }

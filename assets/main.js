@@ -3,7 +3,7 @@ const engFlag = "images/eng-lang.png"
 const langStorage = localStorage.getItem("lang")
 if(langStorage != null){
     selected = langStorage
-    console.log(selected)
+
 }else{
     selected = "spa"
 }
@@ -37,4 +37,6 @@ if(selected === "eng"){
     langChange("eng")
 }
 document.getElementById("lang-button").addEventListener('click',langChange)
+
+
 
