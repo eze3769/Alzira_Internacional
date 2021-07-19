@@ -86,7 +86,7 @@ html {
     color: #fffefe00;
     font-size: 0;
     padding:50px 300px;
-    background-image: url("/images/h1Main.png");
+    background-image: url("images/h1Main.png");
     background-size:100%;
     background-repeat: no-repeat;
   }
