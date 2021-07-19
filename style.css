@@ -86,7 +86,7 @@ html {
     color: #fffefe00;
     font-size: 0;
     padding:50px 300px;
-    background-image: url("/images/h1-main.png");
+    background-image: url("/images/h1Main.png");
     background-size:100%;
     background-repeat: no-repeat;
   }
@@ -131,6 +131,10 @@ html {
     text-align: center;
     padding:30px;
     font-size: 18px;
+    
+}
+#aboutUs .aboutUs-textContainer .aboutUs-enhanceSuscribe a{
+color:rgba(0, 0, 0, 0.9)
 }
 #aboutUs .aboutUs-textContainer .aboutUs-enhanceSuscribe:hover{
     cursor:pointer;
@@ -557,8 +561,12 @@ html {
         margin-top: 10px;
         width: 100%;
     }
+    #aboutUs .aboutUs-textContainer .aboutUs-sectionText{
+        color:rgba(0, 0, 0, 0.9);
+    }
     #aboutUs .aboutUs-textContainer .aboutUs-enhanceText{
         padding: unset;
+       
     }
     .section-title{
         padding:unset;
@@ -573,7 +581,7 @@ html {
     }
     .opportunities .opportunities-container .opportunities-img{
         position: absolute;
-        margin-top: 40vh;
+        margin-top: 35vh;
         width: 80%;
         opacity: 0.2;
     }
