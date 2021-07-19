@@ -78,10 +78,17 @@ html {
     transform: scale(0.98);
     color: #7F1C3B;
 }
+.bg-color {
+    background-color: #7F1C3B;
+}
+
 .background-container {
     padding:0;
     background-image: url("./images/background.jpg");
     background-repeat: no-repeat;
+    height: 617px;
+    max-width: 1440px;
+    background-position: center;
 }
 .container-fluid  .presentation-container{
     padding: 3vw;
@@ -90,7 +97,7 @@ html {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    height:617px;
 }
 .presentation-text-container{
     display:flex;
@@ -491,17 +498,17 @@ color:rgba(0, 0, 0, 0.9)
     width: 100%;
 }
 
-@media screen and (max-width: 1091px) {
+@media screen and (min-width: 993px) {
     .navbar{
         justify-content: unset;
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
-    .navbar .logo{
+    /* .navbar .logo{
         position:relative;
         margin-left: 33vw;
         
-    }
+    } */
     .opportunities .opportunities-container .opportunities-TextContainer .opportunities-TextContainerTitle{
         font-size: 2em;
     }
@@ -519,16 +526,16 @@ color:rgba(0, 0, 0, 0.9)
     }
     #aboutUs .calendarBox .calendarBox-TextContainer .calendarBox-text {
         font-size: 1em;
-}
-#aboutUs .calendarBox .calendarBox-img{
-    width: 60px;
-    padding:10px;
-}
-#aboutUs .calendarBox{
-    width: 400px;
-    height: 90px;
-    margin-bottom: unset;
-}
+    }
+    #aboutUs .calendarBox .calendarBox-img{
+        width: 60px;
+        padding:10px;
+    }
+    #aboutUs .calendarBox{
+        width: 400px;
+        height: 90px;
+        margin-bottom: unset;
+    }
 }
 @media screen and (max-width: 992px){
     .navbar .logo{
@@ -667,7 +674,7 @@ color:rgba(0, 0, 0, 0.9)
         height: 80px;
         width: 200px;
         color: white;
-        font-size: larger;
+        font-size: 1.5em;
         margin-bottom: 50px;
     }
     .img-flecha {
@@ -697,16 +704,16 @@ color:rgba(0, 0, 0, 0.9)
     }
     .contacto-title {
         color: white;
-        font-size: 36px;
+        font-size: 2em;
         font-family: 'Montserrat', sans-serif;
     }
     .contacto-p {
         margin-top: 80px;
-        font-size: 26px;
+        font-size: 1.5em;
         color: white;
     }
     label {
-        font-size: 18px;
+        font-size: 1.5em;
         color: #ffffff;
     }
     textarea {
@@ -729,7 +736,7 @@ color:rgba(0, 0, 0, 0.9)
         height: 80px;
         width: 200px;
         color: white;
-        font-size: larger;
+        font-size: 1.5em;
         margin-bottom: 50px;
     }
     .img-flecha {
@@ -761,16 +768,16 @@ color:rgba(0, 0, 0, 0.9)
     }
     .contacto-title {
         color: white;
-        font-size: 36px;
+        font-size: 2em;
         font-family: 'Montserrat', sans-serif;
     }
     .contacto-p {
         margin-top: 80px;
-        font-size: 26px;
+        font-size: 1.5em;
         color: white;
     }
     label {
-        font-size: 18px;
+        font-size: 1.5em;
         color: #ffffff;
     }
     textarea {
@@ -787,7 +794,7 @@ color:rgba(0, 0, 0, 0.9)
 } 
 .direccion-container {
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -798,9 +805,10 @@ color:rgba(0, 0, 0, 0.9)
 .direccion-container-p {
     color: #000000;
 }
-.direccion-container p span{
+.bolder{
     font-weight: bolder;
 }
+
 /*footer*/
 .img-footer-redes {
     height: 40px;
@@ -816,7 +824,7 @@ footer {
     flex-direction: column;
 }
 .tit-footer {
-    font-size: 48px;
+    font-size: 1.5em;
     color: white;
     font-family: Montserrat;
 }
