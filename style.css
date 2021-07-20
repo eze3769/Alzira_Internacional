@@ -497,11 +497,7 @@ color:rgba(0, 0, 0, 0.9)
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
-    .navbar .logo{
-        position:relative;
-        margin-left: 33vw;
-        
-    }
+    
     .opportunities .opportunities-container .opportunities-TextContainer .opportunities-TextContainerTitle{
         font-size: 2em;
     }
@@ -548,7 +544,7 @@ color:rgba(0, 0, 0, 0.9)
     }
     .presentation-subtitle{
         font-size:1em;
-
+        padding-top:unset;
     }
     .presentation-title{
         padding: 25px 160px;
