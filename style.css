@@ -22,6 +22,22 @@ html {
     width: 100%;
     height: 180vh;
 }
+#goUp {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 105px; /* Place the button at the bottom of the page */
+    right: 27px; /* Place the button 30px from the right */
+    z-index: 3; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  #goUp:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
 .eng-text{
     display:none;
 }
@@ -274,7 +290,7 @@ color:rgba(0, 0, 0, 0.9)
     }
     figure p span {
         font-family: 'Frijole', cursive; 
-        color: white;
+        color: #C4C4C4;
         font-size: 14px;
     }
     figure img {
@@ -326,7 +342,7 @@ color:rgba(0, 0, 0, 0.9)
     }
     figure p span{
         font-family: 'Frijole', cursive; 
-        color: white;
+        color: #C4C4C4;
         font-size: 20px;
     }
     figure img {
@@ -693,7 +709,6 @@ color:rgba(0, 0, 0, 0.9)
     }
     .color-arrow-drop-up {
         color: white;
-        margin-left: 80px;
         padding: 10px;
         height: 50px;
         width: 50px;
@@ -755,7 +770,6 @@ color:rgba(0, 0, 0, 0.9)
     }
     .color-arrow-drop-up {
         color: white;
-        margin-left: 80px;
         padding: 10px;
         height: 50px;
         width: 50px;
