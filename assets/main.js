@@ -41,7 +41,7 @@ document.getElementById("lang-button").addEventListener('click',langChange)
 $(document).ready(()=>{
     $(function () {
         $('#myDiv').floatingWhatsApp({
-          phone: '+34692801575',
+          phone: '+34658573496',
           position: 'right'
         });
       });
