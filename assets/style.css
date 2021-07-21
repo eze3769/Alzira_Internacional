@@ -13,6 +13,7 @@ html {
 .navbar-default{
     background-color: #862f38;
 }
+
 .full-sized{
     height: 100vh;
     margin:20px 0;
@@ -21,12 +22,28 @@ html {
     width: 100%;
     height: 180vh;
 }
+#goUp {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 105px; /* Place the button at the bottom of the page */
+    right: 27px; /* Place the button 30px from the right */
+    z-index: 3; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  #goUp:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
 .eng-text{
     display:none;
 }
 .navbar .logo{
     position: absolute;
-    width: 115px;
+    width: 10vw;
     top:5px;
     left: 5px;
 }
@@ -84,7 +101,7 @@ html {
 
 .background-container {
     padding:0;
-    background-image: url("./images/background.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     height: 617px;
     max-width: 1440px;
@@ -108,7 +125,7 @@ html {
     color: #fffefe00;
     font-size: 0;
     padding:50px 300px;
-    background-image: url("images/h1Main.png");
+    background-image: url("../images/h1Main.png");
     background-size:100%;
     background-repeat: no-repeat;
   }
@@ -271,9 +288,9 @@ color:rgba(0, 0, 0, 0.9)
     .p-services-style-r {
         color: #930451;
     }
-    figure p {
+    figure p span {
         font-family: 'Frijole', cursive; 
-        color: white;
+        color: #C4C4C4;
         font-size: 14px;
     }
     figure img {
@@ -323,9 +340,9 @@ color:rgba(0, 0, 0, 0.9)
     .p-services-style-r {
         color: #930451;
     }
-    figure p {
+    figure p span{
         font-family: 'Frijole', cursive; 
-        color: white;
+        color: #C4C4C4;
         font-size: 20px;
     }
     figure img {
@@ -498,17 +515,21 @@ color:rgba(0, 0, 0, 0.9)
     width: 100%;
 }
 
-@media screen and (min-width: 993px) {
+@media only screen and (max-width: 991px){
     .navbar{
         justify-content: unset;
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
-    /* .navbar .logo{
-        position:relative;
-        margin-left: 33vw;
-        
-    } */
+    .navbar .logo{
+        left: 45%;
+    }
+    .full-sized{
+        height: unset;
+    }
+    .extra-sized{
+        height: 100vh;
+    }
     .opportunities .opportunities-container .opportunities-TextContainer .opportunities-TextContainerTitle{
         font-size: 2em;
     }
@@ -537,7 +558,7 @@ color:rgba(0, 0, 0, 0.9)
         margin-bottom: unset;
     }
 }
-@media screen and (max-width: 992px){
+ @media screen and (max-width: 768px){
     .navbar .logo{
         display:none;
     }
@@ -555,7 +576,7 @@ color:rgba(0, 0, 0, 0.9)
     }
     .presentation-subtitle{
         font-size:1em;
-
+        padding-top:unset;
     }
     .presentation-title{
         padding: 25px 160px;
@@ -658,7 +679,7 @@ color:rgba(0, 0, 0, 0.9)
     .facilities .facilities-title {
         padding:30px;
     }
-}
+} 
 /*contacto*/
 @media screen and (max-width: 768px) {
     .img-form {
@@ -688,10 +709,9 @@ color:rgba(0, 0, 0, 0.9)
     }
     .color-arrow-drop-up {
         color: white;
-        margin-left: 80px;
-        padding: 10px;
-        height: 50px;
-        width: 50px;
+        padding: 2px;
+        height: 32px;
+        width: 30px;
         border: 1px solid #007bff;
         background-color: #232252;
     }
@@ -750,7 +770,6 @@ color:rgba(0, 0, 0, 0.9)
     }
     .color-arrow-drop-up {
         color: white;
-        margin-left: 80px;
         padding: 10px;
         height: 50px;
         width: 50px;
