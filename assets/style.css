@@ -149,7 +149,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     padding:20px;
-    align-content: center;
+    align-items: center;
 }
 #aboutUs .aboutUs-text{
     width: 110vw;
@@ -181,11 +181,9 @@ color:rgba(0, 0, 0, 0.9)
 #aboutUs .aboutUs-textContainer .aboutUs-enhanceSuscribe:hover{
     cursor:pointer;
 }
-#aboutUs .aboutUs-textContainer .sectionEnhance-img{
-    margin-top: 80px;
-}
+
 #aboutUs .aboutUs-img{
-    width: 45vw;
+    width: 47vw;
     height: 100%;
 }
 .section-title{
