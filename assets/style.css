@@ -142,12 +142,17 @@ html {
 #aboutUs{
     padding: 40px 30px;
     background: #FFFEFE;
+    align-content: center;
     }
 #aboutUs .aboutUs-textContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding:20px;
+    align-content: center;
+}
+#aboutUs .aboutUs-text{
+    width: 110vw;
 }
 #aboutUs .aboutUs-textContainer .aboutUs-sectionText{
     color: rgba(0, 0, 0, 0.65);
@@ -180,14 +185,14 @@ color:rgba(0, 0, 0, 0.9)
     margin-top: 80px;
 }
 #aboutUs .aboutUs-img{
-    width: 38vw;
+    width: 45vw;
     height: 100%;
 }
 .section-title{
     font-weight: 600;
-    font-size: 2.5em;
+    font-size: 2em;
     color: rgba(0, 0, 0, 1);
-    padding:20px;
+    padding-bottom:40px;
     line-height: 40px;
 }
 #aboutUs .calendarBox{
@@ -815,12 +820,12 @@ color:rgba(0, 0, 0, 0.9)
 .container-map {
     display: flex;
 
-    justify-content:center;
+    justify-content:space-evenly;
     flex-wrap: wrap;
 } 
 .direccion-container {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -828,7 +833,20 @@ color:rgba(0, 0, 0, 0.9)
 .bolder{
     font-weight: bolder;
 }
-
+.direccion-container-p{
+    display: flex;
+    flex-direction: row;
+    padding:3vh;
+    
+}
+.direccion-container-text p{
+    margin:0;
+}
+.direccion-img{
+    width: 40px;
+    object-fit:contain;
+    margin-right: 30px;
+}
 /*footer*/
 .img-footer-redes {
     height: 40px;
