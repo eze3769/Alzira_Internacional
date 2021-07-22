@@ -279,7 +279,7 @@
             <h3 class="contacto-title text-center"><span class="spa-text">CONTACTO</span><span class="eng-text">CONTACT</span></h3>
             <p class="contacto-p text-center"><span class="spa-text">¿Quieres saber más acerca de nosotros?</span><span class="eng-text">Do you want to know more about us?</span></p>
             <p class="contacto-p text-center"><span class="spa-text">Escríbenos y te enviaremos toda la información que necesitas para alcanzar tus sueños.</span><span class="eng-text">Write to us and we will send you all the information you need to achieve your dreams.</span></p>
-            <form class="needs-validation" novalidate>
+            <form class="needs-validation" id="contact-form" novalidate>
                 <div class="">
                     <div class="">
                         <label for="validationCustom01"><span class="spa-text">Nombre*</span><span class="eng-text">Name*</span></label>
@@ -307,12 +307,12 @@
                   <div class="">
                     <label for="validationCustom04"><span class="spa-text">Escríbanos aquí*</span><span class="eng-text">Write us here*</span></label>
                     <textarea  class="form-control" id="validationCustom04" v-model="message" required></textarea>
-                    <div class="invalid-feedback">
+                    <div class="invalid-feedback" for="validationCustom04">
                         <span class="spa-text">Por favor, escriba un mensaje antes de enviar.</span><span class="eng-text">Please write a message before sending.</span>
                     </div>
                   </div>
                 <div class="contenedor-btn-form">
-                    <button class="btn btn-primary " @click="enviar"><span id="btnValidar" class="spa-text">ENVIAR</span><span id="btnValidar" class="eng-text">SEND</span></button>
+                    <button class="btn btn-primary "id="btnValidar" type="submit"><span  class="spa-text">ENVIAR</span><span class="eng-text">SEND</span></button>
                 </div>
             </form>
         </div>
@@ -346,61 +346,7 @@
         <p>Copyright © 2021 U.D Alzira. <span class="spa-text">Todos los derechos reservados.</span><span class="eng-text">All rights reserved.</span></p>
     </footer>
     <!--script correo de formulario-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">
-    </script>
     <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript">
-    </script>
-    <script>
-        
-        (function(){
-            emailjs.init("user_bldGjbxI6Q2mwlO0yl8Vd");
-        })();
-        const vue = new Vue({
-            el: '#app',
-            data(){
-                return {
-                    from_name: '',
-                    from_email: '',
-                    message: '',
-                    subject: '',
-                }
-            },
-            methods: {
-                enviar(){
-                    let data = {
-                        from_name: this.from_name,
-                        from_email: this.from_email,
-                        message: this.message,
-                        subject: this.subject,
-                    };
-                    
-                    emailjs.send("service_fxhk4pv","template_9u99mee", data)
-                    .then(function(response) {
-                       
-                        if(response.text === 'OK'){
-                            if (selected == "eng"){
-                                
-                            }
-                            Swal.fire({
-                              title: selText()[0],
-                              icon: 'success',
-                              html: selText()[1],
-                              focusConfirm: true,
-                              confirmButtonText:'Ok',
-                              confirmButtonAriaLabel: 'Thumbs up, great!',
-                              cancelButtonText:
-                              '<i class="fa fa-thumbs-down"></i>',
-                                cancelButtonAriaLabel: 'Thumbs down'
-                            })
-                            }
-                    console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-                    }, function(err) {
-                        alert('Ocurrió un problema al enviar el correo');
-                    console.log("FAILED. error=", err);
-                    });
-                }
-            }
-        });
     </script>
     <!--Bootstrap-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
