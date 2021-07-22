@@ -15,7 +15,7 @@ html {
 }
 
 .full-sized{
-    height: 100vh;
+
     margin:20px 0;
 }
 .extra-sized{
@@ -142,9 +142,7 @@ html {
 #aboutUs{
     padding: 40px 30px;
     background: #FFFEFE;
-    margin-bottom: 100px;
-
-}
+    }
 #aboutUs .aboutUs-textContainer{
     display: flex;
     flex-direction: row;
@@ -194,7 +192,6 @@ color:rgba(0, 0, 0, 0.9)
 }
 #aboutUs .calendarBox{
     padding:10px;
-    margin:35px;
     margin-bottom: 80px;
     border:2px solid black;
     width:550px;
@@ -367,7 +364,9 @@ color:rgba(0, 0, 0, 0.9)
 .opportunities .opportunities-container .opportunities-img{
     width: 35vw;
     z-index: 2;
-
+}
+.opportunities .opportunities-container .opportunities-img_alt{
+    display: none;
 }
 .opportunities .opportunities-container .opportunities-TextContainer{
     display: flex;
@@ -406,7 +405,8 @@ color:rgba(0, 0, 0, 0.9)
     background: #FFFEFE;
     color:rgba(50, 27, 73, 1);
     font-size: 1.5em;
-    
+    margin-top:30px;
+    margin-bottom: 40px;
     width: fit-content;
     
 }
@@ -437,7 +437,7 @@ color:rgba(0, 0, 0, 0.9)
 
 }
 .formation .formation-container .formation-textContainer .formation-textContainerTitle{
-    width: max-content;
+    width: 70vw;
     font-family:  'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 2em;
@@ -451,7 +451,7 @@ color:rgba(0, 0, 0, 0.9)
     font-size: 36px;
     line-height: 44px;
     color: #6B002C;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     padding-top:60px;
 }
 .formation .formation-container .formation-textContainer .formation-textRed{
@@ -470,7 +470,8 @@ color:rgba(0, 0, 0, 0.9)
     line-height: 30px;
     padding-bottom: 20px;
     letter-spacing: 0.05em;
-
+    width: 60vw;
+    font-size: 1.3em;
 }
 .formation .formation-container .formation-textContainer .formation-bulletContainer{
     display:flex;
@@ -509,6 +510,9 @@ color:rgba(0, 0, 0, 0.9)
         justify-content: unset;
         flex-direction: row-reverse;
         justify-content: flex-end;
+    }
+    .nav-text{
+        font-weight: bold;
     }
     .navbar .logo{
         left: 45%;
@@ -615,10 +619,15 @@ color:rgba(0, 0, 0, 0.9)
         display:none;
     }
     .opportunities .opportunities-container .opportunities-img{
+        display:none;
+    }
+    .opportunities .opportunities-container .opportunities-img_alt{
+        display: unset;
         position: absolute;
-        margin-top: 35vh;
-        width: 80%;
-        opacity: 0.2;
+        left: 0;
+        width: 50vw;
+        margin-top:32vh;
+        opacity: 0.1;
     }
     .opportunities .opportunities-container .opportunities-TextContainer{
         width: 100%;
@@ -629,6 +638,7 @@ color:rgba(0, 0, 0, 0.9)
         width: unset;
         padding:0 20px;
     }
+    
     .opportunities .opportunities-container .opportunities-TextContainer .opportunities-text {
         color: rgba(0, 0, 0, 0.9);
     }
@@ -642,6 +652,7 @@ color:rgba(0, 0, 0, 0.9)
     }
     .formation .formation-container .formation-text {
         color: rgba(0, 0, 0, 0.9);
+        width:unset;
     }
     .formation .formation-container .formation-backgroundContainer{
         background: unset;
@@ -652,7 +663,7 @@ color:rgba(0, 0, 0, 0.9)
     .formation .formation-container .formation-imgContainer .formation-img{
         top: 130px;
         width: 70vw;
-        opacity: 0.4;
+        opacity: 0.25;
     }
     .formation .formation-container .formation-textContainer .formation-textContainerSubtitle {
         font-weight: 800;
@@ -738,7 +749,7 @@ color:rgba(0, 0, 0, 0.9)
         width: 620px;
     }
     .contenedor-btn {
-        margin: 100px;
+        margin-top: 100px;
         text-align: center;
     }
     .mas-info-btn {
