@@ -1,11 +1,22 @@
 const spaFlag = "images/spa-lang.png"
 const engFlag = "images/eng-lang.png"
 const langStorage = localStorage.getItem("lang")
+let textAlert = "Nos comunicaremos a la brevedad"
 if(langStorage != null){
     selected = langStorage
 
 }else{
-    selected = "spa"
+  selected = navigator.language || navigator.userLanguage;
+  switch (selected){
+    case "es-419":
+      selected = "spa"
+      break;
+    case "en":
+      selected= "eng"
+      break;
+    default:
+      selected = "eng"
+  }
 }
 
 const langChange = (option)=>{
@@ -23,12 +34,11 @@ const langChange = (option)=>{
             setFrom = "eng"
         }
     }
-    
-    
+     
 
     $(`.${setTo}-text`).css("display","unset")
     $(`.${setFrom}-text`).css("display","none")
-    document.getElementById("lang-button").src = `images/${setTo}-lang.png`
+    document.getElementById("lang-button").src = `images/${setFrom}-lang.png`
     
     localStorage.setItem("lang", setTo)
     selected = setTo
@@ -41,7 +51,7 @@ document.getElementById("lang-button").addEventListener('click',langChange)
 $(document).ready(()=>{
     $(function () {
         $('#myDiv').floatingWhatsApp({
-          phone: '+34658573496',
+          phone: '+34692801575',
           position: 'right'
         });
       });
@@ -65,5 +75,14 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+const selText = () =>{
+  let msg = []
+  if (selected == "eng"){  
+    msg = ["Thanks for your message!","We will contact you as soon as possible"]
+  }else{
+      msg = ["¡Gracias por tu mensaje!","Nos comunicaremos a la brevedad"]
+   }
+  return msg
+}
 
 
