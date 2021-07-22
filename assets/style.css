@@ -151,9 +151,7 @@ html {
     padding:20px;
     align-items: center;
 }
-#aboutUs .aboutUs-text{
-    width: 110vw;
-}
+
 #aboutUs .aboutUs-textContainer .aboutUs-sectionText{
     color: rgba(0, 0, 0, 0.65);
     font-weight: 400;
