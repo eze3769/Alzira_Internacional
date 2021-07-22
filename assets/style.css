@@ -276,17 +276,17 @@ color:rgba(0, 0, 0, 0.9)
     }
     /*titulo*/
     .p-services-style-w, .p-services-style-r {
-        font-family: 'Frijole', cursive;
+        font-family: 'Lilita One', cursive;
         font-size: 36px;
         color: white;
     }
     figure p span {
-        font-family: 'Frijole', cursive; 
+        font-family:  'Montserrat', sans-serif;
         color: #C4C4C4;
         font-size: 14px;
     }
     figure img {
-        width: 80px;
+        width: 58px;
     }
     .container-panal {
         background: linear-gradient(90deg, rgba(6, 5, 61, 0.87) 61.28%, #85001F 103.12%);
@@ -320,17 +320,17 @@ color:rgba(0, 0, 0, 0.9)
     }
     /*titulo*/
     .p-services-style-w, .p-services-style-r {
-        font-family: 'Frijole', cursive;
+        font-family: 'Lilita One', cursive;
         font-size: 24px;
         color: white;
     }
     figure p span{
-        font-family: 'Frijole', cursive; 
+        font-family:  'Montserrat', sans-serif;
         color: #C4C4C4;
         font-size: 20px;
     }
     figure img {
-        width: 30px;
+        width: 40px;
     }
     .servicio-small {
         background: linear-gradient(90deg, rgba(6, 5, 61, 0.87) 61.28%, #85001F 103.12%);
