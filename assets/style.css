@@ -193,7 +193,8 @@ color:rgba(0, 0, 0, 0.9)
 }
 #aboutUs .calendarBox{
     padding:10px;
-    margin-bottom: 80px;
+    margin-top: 35px;
+    margin-bottom: 60px;
     border:2px solid black;
     width:550px;
     height: 111px;
@@ -461,7 +462,7 @@ color:rgba(0, 0, 0, 0.9)
 .formation .formation-container .formation-textContainer .formation-redBullet{
     color:#6B002C;
     font-size: 2rem;
-    padding-bottom: 10px;
+    padding-bottom: 70px;
     padding-right:20px;
     
 }
@@ -539,6 +540,7 @@ color:rgba(0, 0, 0, 0.9)
     .facilities .facilities-title{
         font-size: 2em;
     }
+   
     #aboutUs .calendarBox .calendarBox-TextContainer .calendarBox-text {
         font-size: 1em;
     }
@@ -549,7 +551,7 @@ color:rgba(0, 0, 0, 0.9)
     #aboutUs .calendarBox{
         width: 400px;
         height: 90px;
-        margin-bottom: unset;
+        margin-bottom: 40px;
     }
 }
  @media screen and (max-width: 768px){
@@ -595,7 +597,8 @@ color:rgba(0, 0, 0, 0.9)
     #aboutUs .calendarBox{
         width: 80%;
         height: 90px;
-        margin: 20px;
+        margin-top: 10px;
+        margin-bottom: 40px;
     }
     #aboutUs .aboutUs-textContainer .sectionEnhance-img {
         margin-top: 10px;
@@ -682,10 +685,8 @@ color:rgba(0, 0, 0, 0.9)
     }
 } 
 /*contacto*/
-@media screen and (max-width: 768px) {
-    .img-form {
-        display: none;
-    }
+
+@media screen and (min-width: 768px) {
     .mas-info-btn {
         background-color: transparent;
         border: 4px solid white;
@@ -694,7 +695,18 @@ color:rgba(0, 0, 0, 0.9)
         color: white;
         font-size: 1.5em;
         margin-bottom: 50px;
+        transition: linear 0.2s;
     }
+    .mas-info-btn:hover{
+        transform: scale(1.05);
+        background-color: #6B002C;
+    }
+}
+@media screen and (max-width: 768px) {
+    .img-form {
+        display: none;
+    }
+    
     .img-flecha {
         width: 130px;
         position: relative;
