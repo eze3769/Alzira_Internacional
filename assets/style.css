@@ -22,6 +22,9 @@ html {
     width: 100%;
     height: 180vh;
 }
+.form-control{
+    background-color: rgba(255, 255, 255, 0.884)
+}
 #goUp {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -195,7 +198,7 @@ color:rgba(0, 0, 0, 0.9)
     padding:10px;
     margin-top: 35px;
     margin-bottom: 60px;
-    border:2px solid black;
+    border:4px solid rgb(8, 8, 8);
     width:550px;
     height: 111px;
     display:flex;
@@ -414,6 +417,7 @@ color:rgba(0, 0, 0, 0.9)
 }
 .opportunities .opportunities-container .opportunities-btn:hover{
     color: #7F1C3B;
+    border: 4px solid #7F1C3B;
 }
 
 .formation .formation-container .formation-backgroundContainer{
@@ -549,6 +553,7 @@ color:rgba(0, 0, 0, 0.9)
         padding:10px;
     }
     #aboutUs .calendarBox{
+         
         width: 400px;
         height: 90px;
         margin-bottom: 40px;
@@ -746,8 +751,9 @@ color:rgba(0, 0, 0, 0.9)
         color: white;
     }
     label {
-        font-size: 1.5em;
-        color: #ffffff;
+        font-size: 14px;
+        color: #ffffffc4;
+        margin-top: 20px;
     }
     textarea {
         height: 140px !important;
@@ -797,7 +803,7 @@ color:rgba(0, 0, 0, 0.9)
     }
     .contacto {
         padding-top: 100px;
-        height: 972px;
+        height: 1072px;
         background: linear-gradient(88.99deg, rgba(6, 5, 61, 0.87) -0.58%, #85001F 102.24%);
         display: flex;
         justify-content: flex-end;
@@ -808,15 +814,25 @@ color:rgba(0, 0, 0, 0.9)
         color: white;
         font-size: 2em;
         font-family: 'Montserrat', sans-serif;
+        font-weight:bold;
     }
     .contacto-p {
-        margin-top: 80px;
-        font-size: 1.5em;
-        color: white;
+        margin-top: 50px;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.87);
+        margin-bottom: 50px;
     }
+    .contacto-p-tp{
+        margin-top: 60px;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.87);
+        margin-bottom: 50px;
+    }
+    
     label {
-        font-size: 1.5em;
-        color: #ffffff;
+        font-size: 14px;
+        color: #ffffffc4;
+        margin-top: 20px;
     }
     textarea {
         height: 140px !important;
@@ -827,7 +843,8 @@ color:rgba(0, 0, 0, 0.9)
 /*mapa*/
 .container-map {
     display: flex;
-
+    margin-top: 40px;
+    margin-bottom: 40px;
     justify-content:space-evenly;
     flex-wrap: wrap;
 } 
@@ -837,6 +854,7 @@ color:rgba(0, 0, 0, 0.9)
     display: flex;
     flex-direction: column;
     justify-content:center;
+     margin-right:60px;
 }
 .bolder{
     font-weight: bolder;
@@ -871,6 +889,7 @@ footer {
 }
 .tit-footer {
     font-size: 1.5em;
+    margin-top: 50px;
     color: white;
     font-family: Montserrat;
 }
