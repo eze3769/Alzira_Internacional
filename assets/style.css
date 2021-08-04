@@ -744,11 +744,19 @@ color:rgba(0, 0, 0, 0.9)
         color: white;
         font-size: 2em;
         font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
     }
     .contacto-p {
-        margin-top: 80px;
-        font-size: 1.5em;
+        margin-top: 50px;
+        font-size: 16px;
         color: white;
+        margin-bottom: 50px;
+    }
+    .contacto-p-tp{
+        margin-top: 50px;
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.87);
+        margin-bottom: 50px;
     }
     label {
         font-size: 14px;
@@ -823,7 +831,7 @@ color:rgba(0, 0, 0, 0.9)
         margin-bottom: 50px;
     }
     .contacto-p-tp{
-        margin-top: 60px;
+        margin-top: 50px;
         font-size: 18px;
         color: rgba(255, 255, 255, 0.87);
         margin-bottom: 50px;
